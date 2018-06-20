@@ -1,7 +1,7 @@
 require 'rspec'
 require_relative '../test/test_helper'
-require 'library'
-require 'face'
+require 'ft-ffi-wrapper/library'
+require 'ft-ffi-wrapper/face'
 
 include FT::Wrapper
 

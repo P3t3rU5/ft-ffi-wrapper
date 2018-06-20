@@ -20,6 +20,7 @@ module FT
 
       def self.finalize(library)
         proc do
+          LOGGER.debug "releasing FT_Library #{library}..."
           FT.Done_FreeType(library)
           LOGGER.debug "released FT_Library #{library}."
         end
