@@ -1,8 +1,6 @@
 require 'ft-ffi/function/library'
 require 'ft-ffi-wrapper/face'
 
-include FT
-
 module FT
   module Wrapper
     class Library

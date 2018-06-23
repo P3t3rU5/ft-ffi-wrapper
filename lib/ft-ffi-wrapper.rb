@@ -1,7 +1,7 @@
-require_relative 'ft-wrapper-logger'
-require 'version'
+require 'ft-ffi'
 
-require 'ft-ffi-wrapper/library'
+require_relative 'version'
+require_relative 'ft-wrapper-logger'
 
 module FT
   module Wrapper
