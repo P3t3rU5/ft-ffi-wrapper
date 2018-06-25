@@ -1,11 +1,9 @@
 require 'rspec'
 require_relative '../test/test_helper'
 # require 'ft-ffi'
-require 'library'
+require_relative '../lib/ft-ffi-wrapper/library'
 
-include FT::Wrapper
-
-RSpec.describe Library do
+RSpec.describe FT::Wrapper::Library do
 
   subject { Library.new }
 
@@ -52,13 +50,13 @@ RSpec.describe Library do
 
   describe '#renderers' do
     it '' do
-      expect(subject.renderers).to be_a ListRec
+      expect(subject.renderers).to be_a FT::ListRec
     end
   end
 
   describe '#current_renderer' do
     it '' do
-      expect(subject.current_renderer).to be_a RendererRec
+      expect(subject.current_renderer).to be_a FT::RendererRec
     end
   end
 end
